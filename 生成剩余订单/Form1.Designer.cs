@@ -47,17 +47,18 @@
             this.button_生成剩余订单.Enabled = false;
             this.button_生成剩余订单.Location = new System.Drawing.Point(12, 50);
             this.button_生成剩余订单.Name = "button_生成剩余订单";
-            this.button_生成剩余订单.Size = new System.Drawing.Size(222, 84);
+            this.button_生成剩余订单.Size = new System.Drawing.Size(161, 65);
             this.button_生成剩余订单.TabIndex = 1;
             this.button_生成剩余订单.Text = "生成剩余订单";
             this.button_生成剩余订单.UseVisualStyleBackColor = true;
+            this.button_生成剩余订单.Click += new System.EventHandler(this.button_生成剩余订单_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(246, 146);
+            this.ClientSize = new System.Drawing.Size(185, 127);
             this.Controls.Add(this.button_生成剩余订单);
             this.Controls.Add(this.label_连接反馈);
             this.MaximizeBox = false;
@@ -66,6 +67,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "生成剩余订单";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();

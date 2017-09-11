@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "生成剩余订单", "生�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "公有类库", "公有类库\公有类库.csproj", "{701F6E2E-BA81-4D88-A206-0BD27150143E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTR", "MTR\MTR.csproj", "{3991EC9B-EB18-49BE-BE4B-684FB6D21D3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{701F6E2E-BA81-4D88-A206-0BD27150143E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{701F6E2E-BA81-4D88-A206-0BD27150143E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{701F6E2E-BA81-4D88-A206-0BD27150143E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3991EC9B-EB18-49BE-BE4B-684FB6D21D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3991EC9B-EB18-49BE-BE4B-684FB6D21D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3991EC9B-EB18-49BE-BE4B-684FB6D21D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3991EC9B-EB18-49BE-BE4B-684FB6D21D3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
