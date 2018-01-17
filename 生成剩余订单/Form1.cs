@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using 公有类库;
+using System.IO;
 
 namespace 生成剩余订单
 {
@@ -34,21 +34,22 @@ namespace 生成剩余订单
                 this.label_连接反馈.ForeColor = Color.Black;
                 this.label_连接反馈.Text = "连接成功";
                 this.button_生成剩余订单.Enabled = true;
+                try
+                {
+                    操作 = new 操作类(连接.getSqlCommand());
+                }
+                catch (Exception)
+                {
+                    this.label_连接反馈.ForeColor = Color.Red;
+                    this.label_连接反馈.Text = "初始化异常";
+                }
             }
             else
             {
                 this.label_连接反馈.ForeColor = Color.Red;
                 this.label_连接反馈.Text = "连接失败,请查看网络与服务器是否正常";
             }
-            try
-            {
-                操作 = new 操作类();
-            }
-            catch (Exception)
-            {
-                this.label_连接反馈.ForeColor = Color.Red;
-                this.label_连接反馈.Text = "初始化异常";
-            }
+            
             
         }
 
@@ -61,8 +62,13 @@ namespace 生成剩余订单
         {
             //打开文件夹选择器
             FolderBrowserDialog fbd = new FolderBrowserDialog();
+            fbd.Description = "选择需要保存的位置";
             fbd.ShowDialog();
             string path = fbd.SelectedPath;
+            Directory.CreateDirectory(path + "\\剩余订单表");
+            操作.开始生成订单();
+            操作.保存表(path+ "\\剩余订单表");
+            this.label_连接反馈.Text = "保存数据成功";
             
             
         }

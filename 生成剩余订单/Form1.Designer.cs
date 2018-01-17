@@ -35,9 +35,10 @@
             // label_连接反馈
             // 
             this.label_连接反馈.AutoSize = true;
-            this.label_连接反馈.Location = new System.Drawing.Point(13, 13);
+            this.label_连接反馈.Location = new System.Drawing.Point(26, 26);
+            this.label_连接反馈.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label_连接反馈.Name = "label_连接反馈";
-            this.label_连接反馈.Size = new System.Drawing.Size(29, 12);
+            this.label_连接反馈.Size = new System.Drawing.Size(58, 24);
             this.label_连接反馈.TabIndex = 0;
             this.label_连接反馈.Text = "连接";
             // 
@@ -45,9 +46,10 @@
             // 
             this.button_生成剩余订单.AutoSize = true;
             this.button_生成剩余订单.Enabled = false;
-            this.button_生成剩余订单.Location = new System.Drawing.Point(12, 50);
+            this.button_生成剩余订单.Location = new System.Drawing.Point(24, 100);
+            this.button_生成剩余订单.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button_生成剩余订单.Name = "button_生成剩余订单";
-            this.button_生成剩余订单.Size = new System.Drawing.Size(161, 65);
+            this.button_生成剩余订单.Size = new System.Drawing.Size(322, 130);
             this.button_生成剩余订单.TabIndex = 1;
             this.button_生成剩余订单.Text = "生成剩余订单";
             this.button_生成剩余订单.UseVisualStyleBackColor = true;
@@ -55,12 +57,13 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(185, 127);
+            this.ClientSize = new System.Drawing.Size(369, 254);
             this.Controls.Add(this.button_生成剩余订单);
             this.Controls.Add(this.label_连接反馈);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
